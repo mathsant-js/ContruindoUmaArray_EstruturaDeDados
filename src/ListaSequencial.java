@@ -19,14 +19,10 @@ public class ListaSequencial {
     public void adiciona(Object elemento) {
         if (listaCheia()) {
             garantaEspaco();
-            vetor[fim] = elemento;
-            fim++;
-            totalDeObjetos++;
-        } else {
-            vetor[fim] = elemento;
-            fim++;
-            totalDeObjetos++;
         }
+        vetor[fim] = elemento;
+        fim++;
+        totalDeObjetos++;
     }
 
     public void adiciona(Object elemento, int posicao) {
@@ -35,13 +31,12 @@ public class ListaSequencial {
             for (int i = fim; fim < vetor.length; i++) {
                 vetor[i + 1] = vetor[i];
             }
-            vetor[fim] = elemento;
         } else {
             for (int i = fim; fim < vetor.length; i++) {
                 vetor[i + 1] = vetor[i];
             }
-            vetor[fim] = elemento;
         }
+        vetor[fim] = elemento;
     }
 
     public void remove() {

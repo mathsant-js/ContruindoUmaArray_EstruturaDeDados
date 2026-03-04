@@ -30,6 +30,6 @@ public class Main {
         ls.listaVazia();  // Irá retornar false
 
         // Procurar um elemento que o usuário deseja
-        ls.contem(5);
+        System.out.println(ls.contem(5));
     }
 }
